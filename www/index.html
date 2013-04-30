@@ -26,28 +26,29 @@
         <title>Aam Wala</title>
     </head>
     <body>
-        <div class="app">
+        <div id="loginPanel" class="app">
             <h2>Aam Wala Arivals</h2>
-            <div id="deviceready" class="blink">
+                <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div> 
             <div id="loginPanel" >
             <h3>Login</h3>
-            <p><input type="text" id="txtUserName" placeholder="User Name" /></p>
-            <p><input type="password" id="txtPassword" placeholder="Password" /></p>
-            <p><input type="button" id="btnLogin" value="Login"/></p>
+            <p><input type="text" id="txtUserName" placeholder="User Name" class="fullWidth" /></p>
+            <p><input type="password" id="txtPassword" placeholder="Password" class="fullWidth" /></p>
+            <p><input type="button" id="btnLogin" value="Login" class="fullWidth"/></p>
             </div>
+        </div>
             <div id="entryPanel">
-            <p><input type="text" id="txtFarmerName" placeholder="Farmer Name" /></p>
+            <p><input type="text" id="txtFarmerName" placeholder="Farmer Name"  class="fullWidth"/></p>
             <p><img id="imgFarmer" src="img/farmer.jpg" /></p>
-            <p>Varities</p>
+            <p><strong>Varities</strong></p>
             <ul>
-            <li>Badami</li>
-            <li>Rajgira</li>
+            <li class="listSelected">Badami</li>
+            <li class="listSelected">Rajgira</li>
             </ul>
             <p>
-            <select id="selVarityList">
+            <select id="selVarityList"  class="fullWidth">
             <option value="Amlet">Amlet</option>
             <option value="Banisha">Banisha</option>
             <option value="ChoCho">ChoCho</option>
@@ -58,26 +59,47 @@
             <option value="Raspari">Raspari</option>
             <option value="Shakerbeenj">Shakerbeenj</option>
             </select><br />
-            <input type="button" id="btnAddVirity" value="Add to List"/></p>            
+            <input type="button" id="btnAddVirity" value="Add to List" class="fullWidth"/></p>            
             <p>            
-            <select id="selVehicle">
+            <select id="selVehicle"  class="fullWidth">
             <option value="Auto">Auto</option>
             <option value="Tempo">Tempo</option>
             <option value="Tractor">Tractor</option>            
             </select><br />
-            <input type="text" id="txtVehiNumber" placeholder="Vehicle Number" /><br />
-            <input type="text" id="txtLoading" placeholder="Loading" /><br />            
-            <select id="selLoaders">
+            <input type="text" id="txtVehiNumber" placeholder="Vehicle Number"  class="fullWidth"/><br />
+            <input type="text" id="txtLoading" placeholder="Loading"  class="fullWidth"/><br />            
+            <select id="selLoaders"  class="fullWidth">
             <option value="Auto">Gang1</option>
             <option value="Tempo">Gang2</option>
             <option value="Tractor">Gang3</option>            
             </select><br />
 
-            <input type="text" id="txtAdvance" placeholder="Advance" /><br />
+            <input type="text" id="txtAdvance" placeholder="Advance" class="fullWidth" /><br />
             
-            <input type="button" id="btnSaveArival" value="Save"/></p>
+            <input type="button" id="btnSaveArival" value="Save" class="fullWidth"/></p>
             </div>
-        </div>
+
+            
+            <div id="previewPanel">
+            <p><span id="lblFarmerName">SVPur Siraj</span></p>
+            <p><img id="img1" src="img/farmer.jpg" /></p>
+            <p>Varities</p>
+            <ul>
+            <li class="listSelected">Badami</li>
+            <li class="listSelected">Rajgira</li>
+            </ul>          
+            <p>            
+            <span id="vehType">Tempo</span>
+            <br />
+            <span id="VehicleNumber">KA 02 2343</span><br />
+            <span id="loading">50</span><br />            
+            <span id="Gang">Gang1</span><br />
+
+            <span id="Advance">1500</span><br />
+            
+            <input type="button" id="btnSubmit" value="Submit" class="fullWidth"/></p>
+            </div>
+
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">

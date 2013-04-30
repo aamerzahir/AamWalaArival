@@ -42,7 +42,9 @@ body {
     margin:0px;
     padding:0px;
     text-transform:uppercase;
-    width:100%;
+    width:100;
+    margin:5px;
+    
 }
 
 /* Portrait layout (default) */
@@ -50,7 +52,7 @@ body {
     background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
     position:absolute;             /* position in the center of the screen */
     left:50%;
-    top:50%;
+    top:30%;
     height:50px;                   /* text area height */
     width:225px;                   /* text area width */
     text-align:center;
@@ -113,3 +115,33 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+#entryPanel, #previewPanel
+{
+    display:none;
+    }
+    
+     ul,li {
+                padding:0;
+                margin:0;
+                border:0;
+            }
+            
+            li {
+                padding:0 10px;
+                border-bottom:1px solid #ccc;
+                height:40px; line-height:40px;
+                font-weight:normal;
+                cursor:pointer;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -o-text-overflow: ellipsis;
+                -moz-binding: url('assets/xml/ellipsis.xml#ellipsis');
+            }
+            
+            .fullWidth
+            {
+                width:100%;
+                height:30px;
+                }
